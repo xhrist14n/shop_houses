@@ -19,12 +19,41 @@ function list(){
 
 
 function home(){
+    active_menu('home');
     $("#content").load(
         'tpl/content/home.html',
         function(){
             slider();
 
             list();
+        }
+    );
+}
+
+function house_list(){
+
+}
+
+function sell(){
+    active_menu('sell');
+    $("#content").load(
+        'tpl/content/sell.html',
+        function(){
+            house_list();
+        }
+    );
+}
+
+function project_list(){
+
+}
+
+function project(){
+    active_menu('project');
+    $("#content").load(
+        'tpl/content/project.html',
+        function(){
+            project_list();
         }
     );
 }
