@@ -1,3 +1,8 @@
 function menu(){
-    $('#menu').load('tpl/menu/menu.html');
+    $('#menu').load(
+        'tpl/menu/menu.html',
+        function(){
+
+        }
+    );
 }
