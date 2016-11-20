@@ -23,6 +23,8 @@ function home(){
         'tpl/content/home.html',
         function(){
             slider();
+
+            list();
         }
     );
 }
