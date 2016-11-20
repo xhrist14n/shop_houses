@@ -2,7 +2,7 @@ function slider(){
     $("#slider").load(
         'tpl/content/home/slider.html',
         function(){
-
+            $('.carousel').carousel();
         }
     );
 }
