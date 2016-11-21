@@ -7,6 +7,16 @@ function slider(){
     );
 }
 
+function slider_none(){
+    $("#slider").load(
+        'tpl/content/home/slider_none.html',
+        function(){
+            $('.carousel').carousel();
+        }
+    );
+}
+
+
 
 function list(){
     $("#list").load(
