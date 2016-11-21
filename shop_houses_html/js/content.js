@@ -58,6 +58,28 @@ function house_list(){
     );
 }
 
+function sell_modal_close(){
+    $("#sell-modal").modal('hide');
+}
+
+function sell_modal(){
+    $("#modal").load(
+        'tpl/content/sell/modal.html',
+        function(){
+            $("#sell-modal").modal('show');
+        }
+    );
+}
+
+function sell_detail(){
+    $("#content").load(
+        'tpl/content/sell/sell.html',
+        function(){
+
+        }
+    );
+}
+
 function sell(){
     active_menu('sell');
     $("#content").load(
@@ -65,6 +87,19 @@ function sell(){
         function(){
             house_filter();
             house_list();
+        }
+    );
+}
+
+function project_modal_close(){
+    $("#project-modal").modal('hide');
+}
+
+function project_modal(){
+    $("#modal").load(
+        'tpl/content/project/modal.html',
+        function(){
+            $("#project-modal").modal('show');
         }
     );
 }
