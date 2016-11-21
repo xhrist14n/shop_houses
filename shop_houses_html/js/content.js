@@ -11,7 +11,7 @@ function slider_none(){
     $("#slider").load(
         'tpl/content/home/slider_none.html',
         function(){
-            $('.carousel').carousel();
+
         }
     );
 }
@@ -64,6 +64,26 @@ function project(){
         'tpl/content/project.html',
         function(){
             project_list();
+        }
+    );
+}
+
+function register(){
+    active_menu('register');
+    $("#content").load(
+        'tpl/content/register.html',
+        function(){
+
+        }
+    );
+}
+
+function login(){
+    active_menu('login');
+    $("#content").load(
+        'tpl/content/login.html',
+        function(){
+
         }
     );
 }
