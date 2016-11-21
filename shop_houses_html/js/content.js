@@ -42,7 +42,7 @@ function home(){
 
 function house_filter(){
     $("#filter").load(
-        'tpl/content/sell/filter.html',
+        'tpl/content/sell/filters.html',
         function(){
 
         }
