@@ -40,8 +40,22 @@ function home(){
     );
 }
 
-function house_list(){
+function house_filter(){
+    $("#filter").load(
+        'tpl/content/sell/filter.html',
+        function(){
 
+        }
+    );
+}
+
+function house_list(){
+    $("#content").load(
+        'tpl/content/sell/list.html',
+        function(){
+
+        }
+    );
 }
 
 function sell(){
@@ -49,6 +63,7 @@ function sell(){
     $("#content").load(
         'tpl/content/sell.html',
         function(){
+            house_filter();
             house_list();
         }
     );
