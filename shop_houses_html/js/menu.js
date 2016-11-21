@@ -2,7 +2,7 @@ function menu(){
     $('#menu').load(
         'tpl/menu/menu.html',
         function(){
-
+            active_menu('home');
         }
     );
 }
