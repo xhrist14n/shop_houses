@@ -50,7 +50,7 @@ function house_filter(){
 }
 
 function house_list(){
-    $("#content").load(
+    $("#list-sell").load(
         'tpl/content/sell/list.html',
         function(){
 
