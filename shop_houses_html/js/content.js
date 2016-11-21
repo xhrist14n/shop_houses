@@ -70,7 +70,11 @@ function sell(){
 }
 
 function project_list(){
-
+    $("#project-list").load(
+        'tpl/content/project/list.html',
+        function(){
+        }
+    );
 }
 
 function project(){
