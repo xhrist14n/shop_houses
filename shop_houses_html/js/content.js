@@ -69,10 +69,20 @@ function sell(){
     );
 }
 
+function project_detail(){
+    $("#content").load(
+        'tpl/content/project/project.html',
+        function(){
+
+        }
+    );
+}
+
 function project_list(){
     $("#project-list").load(
         'tpl/content/project/list.html',
         function(){
+
         }
     );
 }
